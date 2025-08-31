@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Voxel Engine - Layered Treemap</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+</head>
+<body style="margin:0;background:#0e1116;color:#eee;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif">
+  <div id="chart" style="width:100vw;height:100vh;"></div>
+  <script>
+    const chart = echarts.init(document.getElementById('chart'));
+    const data = {
+      name: 'Voxel Engine Architecture (Layered)',
+      children: [
+        { name: 'Data Layer', children: [
+          {name: 'ChunkData', value: 5},
+          {name: 'BlockType (enum)', value: 2},
+          {name: 'Direction + Extensions', value: 2}
+        ]},
+        { name: 'Config Layer', children: [
+          {name: 'BlockDataManager', value: 4},
+          {name: 'BlockDataSO (textures, solidity, collider)', value: 4},
+          {name: 'World Settings', children: [
+            {name:'mapSizeInChunks', value:1},
+            {name:'chunkSize', value:1},
+            {name:'chunkHeight', value:1},
+            {name:'waterThreshold', value:1},
+            {name:'noiseScale', value:1}
+          ]}
+        ]},
+        { name: 'Generation Layer', children: [
+          {name: 'World.GenerateWorld', value: 6},
+          {name: 'GenerateVoxels', value: 5},
+          {name: 'PerlinNoise (Math)', value: 3}
+        ]},
+        { name: 'Meshing Layer', children: [
+          {name: 'Chunk (static)', children:[
+            {name:'GetChunkMeshData', value:3},
+            {name:'Indexing/Coords', value:2}
+          ]},
+          {name: 'BlockHelper (static)', children:[
+            {name:'GetMeshData (face culling)', value:3},
+            {name:'GetFaceVertices', value:2},
+            {name:'FaceUVs / TexturePosition', value:2}
+          ]},
+          {name: 'MeshData', children:[
+            {name:'Main mesh buffers', value:2},
+            {name:'Water submesh buffers', value:2},
+            {name:'Collider buffers', value:2}
+          ]}
+        ]},
+        { name: 'Rendering Layer', children: [
+          {name:'ChunkRenderer', children:[
+            {name:'Submesh: Solid', value:2},
+            {name:'Submesh: Water', value:2},
+            {name:'Collision mesh build', value:2}
+          ]},
+          {name:'Unity Components', children:[
+            {name:'MeshFilter', value:2},
+            {name:'MeshRenderer', value:2},
+            {name:'MeshCollider', value:2},
+            {name:'URP Camera', value:2},
+            {name:'Directional Light', value:1},
+            {name:'Global Volume (Post)', value:1}
+          ]}
+        ]},
+        { name: 'UI Layer', children: [
+          {name:'Canvas', children:[
+            {name:'Button (Regenerate)', value:2},
+            {name:'Text (Legacy)', value:1},
+            {name:'EventSystem (Input System)', value:1}
+          ]}
+        ]}
+      ]
+    };
+    const option = {
+      backgroundColor: '#0e1116',
+      title: {text: 'Voxel Engine - Layered Treemap', left: 'center', textStyle:{color:'#fff'}},
+      tooltip: {trigger: 'item', formatter: '{b}'},
+      series: [{
+        type: 'treemap',
+        data: [data],
+        leafDepth: 2,
+        roam: true,
+        breadcrumb: {show: true, itemStyle:{color:'#151a22'}, textStyle:{color:'#aaa'}},
+        label: {show: true, color: '#ddd'},
+        itemStyle: {borderColor: '#202530', borderWidth: 1}
+      }]
+    };
+    chart.setOption(option);
+    window.addEventListener('resize', () => chart.resize());
+  </script>
+</body>
+</html>

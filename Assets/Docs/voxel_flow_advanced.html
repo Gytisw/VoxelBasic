@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Voxel Engine - Advanced Flow Diagram</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <style>
+    body { margin:0; background:#0e1116; color:#eee; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif; }
+    .container { width:100vw; height:100vh; overflow:auto; padding: 12px; box-sizing: border-box; }
+    .mermaid { background:#151a22; border:1px solid #202530; border-radius:8px; padding:16px; }
+  </style>
+</head>
+<body>
+<div class="container">
+<div class="mermaid">
+flowchart TD
+  %% Layers
+  subgraph L0["UI Layer"]
+    BTN["Button (Regenerate)"] -->|onClick| WG["World.GenerateWorld()"]
+  end
+
+  subgraph L1["Generation Layer"]
+    WG --> INIT["Clear old chunks, destroy chunk GOs"]
+    INIT --> FORCHUNKS{"For each chunk (x,z)"}
+    FORCHUNKS -->|create| CD["ChunkData(chunkSize, chunkHeight, world, worldPos)"]
+    CD --> GEN["GenerateVoxels: Perlin Noise → groundHeight"]
+    GEN -->|set blocks| SETB["Chunk.SetBlock(...)"]
+    SETB -->|store| CD
+    FORCHUNKS -->|store| MAP["chunkDataDictionary[pos] = CD"]
+  end
+
+  subgraph L2["Meshing Layer"]
+    MAP --> MESHALL["For each ChunkData"]
+    MESHALL --> MD["MeshData(main+water)"]
+    MESHALL --> GCM["Chunk.GetChunkMeshData(CD)"]
+    GCM -->|loop blocks| BLK{"block != Air/Nothing?"}
+    BLK -->|yes| BH["BlockHelper.GetMeshData"]
+    BLK -->|no| SKIP[/skip/]
+    BH --> NB["Check neighbor (Chunk.GetBlock...)"]
+    NB -->|neighbor non-solid| FACES["GetFaceDataIn: vertices+UV+triangles"]
+    NB -->|else| SKIP2[/skip/]
+    FACES --> MD
+  end
+
+  subgraph L3["Rendering Layer"]
+    MD --> INST["Instantiate chunkPrefab at worldPos"]
+    INST --> CR["ChunkRenderer"]
+    CR --> INITC["InitializeChunk(CD)"]
+    INITC --> UPD["UpdateChunk(meshData)"]
+    UPD --> SUBMESH["Set submeshes: 0 Solid, 1 Water"]
+    SUBMESH --> UCOMP["Unity Components"]
+    UCOMP --> MF["MeshFilter"]
+    UCOMP --> MR["MeshRenderer"]
+    UCOMP --> MC["MeshCollider"]
+  end
+
+  subgraph L4["Config/Data"]
+    BDM["BlockDataManager"] -->|Awake: build dict| DICT[("BlockType → TextureData")]
+    BDM -->|tile sizes| TILES[("tileSizeX, tileSizeY")]
+    BDSO["BlockDataSO"] --> BDM
+  end
+
+  %% Cross-layer dependencies
+  BH -. uses .-> DICT
+  BH -. UVs .-> TILES
+  GEN -. noise .-> NOISE["PerlinNoise"]
+  CR -. materials .-> MAT["Materials: Solid+Water"]
+
+  style L0 fill:#17202b,stroke:#223140,color:#dfe7ff
+  style L1 fill:#17231f,stroke:#21382d,color:#dfffe8
+  style L2 fill:#1a1f2b,stroke:#2b3a52,color:#e3e9ff
+  style L3 fill:#241b2b,stroke:#3f284a,color:#ffe3ff
+  style L4 fill:#242224,stroke:#3b363c,color:#f5f1f6
+</div>
+</div>
+<script>
+  mermaid.initialize({ startOnLoad: true, theme: 'dark' });
+</script>
+</body>
+</html>
