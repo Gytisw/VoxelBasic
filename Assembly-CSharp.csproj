@@ -26,7 +26,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\Bin\Debug\Assembly-CSharp\</OutputPath>
-    <DefineConstants>UNITY_6000_2_0;UNITY_6000_2;UNITY_6000;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;UNITY_2023_1_OR_NEWER;UNITY_2023_2_OR_NEWER;UNITY_2023_3_OR_NEWER;UNITY_6000_0_OR_NEWER;UNITY_6000_1_OR_NEWER;UNITY_6000_2_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_UNITY_CONSENT;ENABLE_UNITY_CLOUD_IDENTIFIERS;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_MARSHALLING_TESTS;ENABLE_VIDEO;ENABLE_NAVIGATION_OFFMESHLINK_TO_NAVMESHLINK;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;TEXTCORE_1_0_OR_NEWER;EDITOR_ONLY_NAVMESH_BUILDER_DEPRECATED;PLATFORM_STANDALONE_OSX;PLATFORM_STANDALONE;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_GAMECENTER;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_CLOUD_SERVICES_ENGINE_DIAGNOSTICS;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_SPATIALTRACKING;PLATFORM_HAS_CUSTOM_MUTEX;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;TEXTCORE_TEXT_ENGINE_1_5_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>UNITY_6000_2_0;UNITY_6000_2;UNITY_6000;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;UNITY_2023_1_OR_NEWER;UNITY_2023_2_OR_NEWER;UNITY_2023_3_OR_NEWER;UNITY_6000_0_OR_NEWER;UNITY_6000_1_OR_NEWER;UNITY_6000_2_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_UNITY_CONSENT;ENABLE_UNITY_CLOUD_IDENTIFIERS;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_MARSHALLING_TESTS;ENABLE_VIDEO;ENABLE_NAVIGATION_OFFMESHLINK_TO_NAVMESHLINK;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;TEXTCORE_1_0_OR_NEWER;EDITOR_ONLY_NAVMESH_BUILDER_DEPRECATED;PLATFORM_STANDALONE_OSX;PLATFORM_STANDALONE;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_GAMECENTER;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_CLOUD_SERVICES_ENGINE_DIAGNOSTICS;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_SPATIALTRACKING;PLATFORM_HAS_CUSTOM_MUTEX;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;TEXTCORE_TEXT_ENGINE_1_5_OR_NEWER;UNITY_POST_PROCESSING_STACK_V2;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169,0649</NoWarn>
@@ -45,28 +45,141 @@
     <Analyzer Include="/Applications/Unity/Hub/Editor/6000.2.0f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
     <Analyzer Include="/Applications/Unity/Hub/Editor/6000.2.0f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll" />
     <Analyzer Include="/Users/Apple/Projects/VoxelBasic/Library/PackageCache/com.unity.project-auditor@94c6e4e98816/RoslynAnalyzers/Domain_Reload_Analyzer.dll" />
+    <Analyzer Include="/Users/Apple/Projects/VoxelBasic/Library/PackageCache/com.unity.ai.inference@4ac711cab9a3/Runtime/Core/SourceGenerator/SourceGenerators.dll" />
+    <Analyzer Include="/Users/Apple/Projects/VoxelBasic/Library/PackageCache/com.unity.dt.app-ui@7b87c8225c06/Runtime/SourceGenerators/netstandard2.0/EnumToLowerCase.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/_Scripts/World.cs" />
     <Compile Include="Assets/_Scripts/TerrainGenerator.cs" />
     <Compile Include="Assets/_Scripts/ChunkData.cs" />
     <Compile Include="Assets/_Scripts/Chunk.cs" />
+    <Compile Include="Assets/Scripts/Fsr3UpscalerImageEffectHelper.cs" />
+    <Compile Include="Assets/_Scripts/NoiseSettings.cs" />
+    <Compile Include="Assets/_Scripts/BlockLayers/SurfaceLayerHandler.cs" />
+    <Compile Include="Assets/_Scripts/BlockDataSO.cs" />
+    <Compile Include="Assets/Scripts/Fsr3UpscalerImageEffect.cs" />
+    <Compile Include="Assets/_Scripts/MeshData.cs" />
+    <Compile Include="Assets/_Scripts/World.cs" />
     <Compile Include="Assets/_Scripts/BiomeGenerator.cs" />
     <Compile Include="Assets/_Scripts/MyNoise.cs" />
+    <Compile Include="Assets/_Scripts/BlockLayers/BlockLayerHandler.cs" />
+    <Compile Include="Assets/_Scripts/BlockLayers/UndergroundLayerHandler.cs" />
     <Compile Include="Assets/_Scripts/ChunkRenderer.cs" />
+    <Compile Include="Assets/_Scripts/BlockLayers/WaterLayerHandler.cs" />
     <Compile Include="Assets/_Scripts/Direction.cs" />
-    <Compile Include="Assets/_Scripts/NoiseSettings.cs" />
     <Compile Include="Assets/_Scripts/BlockDataManager.cs" />
-    <Compile Include="Assets/_Scripts/BlockDataSO.cs" />
+    <Compile Include="Assets/_Scripts/BlockLayers/AirLayerHandler.cs" />
     <Compile Include="Assets/_Scripts/BlockHelper.cs" />
     <Compile Include="Assets/_Scripts/BlockType.cs" />
-    <Compile Include="Assets/_Scripts/MeshData.cs" />
     <Compile Include="Assets/_Scripts/DirectionExtensions.cs" />
+    <None Include="Packages/fidelityfx.fsr/Shaders/shaders/ffx_fsr3upscaler_debug_view_pass.hlsl" />
+    <None Include="Packages/fidelityfx.fsr/Shaders/shaders/ffx_fsr3upscaler_luma_pyramid_pass.hlsl" />
     <None Include="Assets/_Textures/Kenny Assets Voxel pack/Spritesheets/spritesheet_characters.xml" />
+    <None Include="Packages/fidelityfx.fsr/Shaders/ffx_fsr3upscaler_prepare_reactivity_pass.compute" />
+    <None Include="Packages/fidelityfx.fsr/Shaders/ffx_fsr2_lock_pass.compute" />
+    <None Include="Packages/fidelityfx.fsr/package.json" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/StdLib.hlsl" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Debug/Waveform.shader" />
+    <None Include="Packages/fidelityfx.fsr/Shaders/ffx_fsr2_rcas_pass.compute" />
+    <None Include="Packages/fidelityfx.fsr/Shaders/shaders/ffx_fsr3upscaler_shading_change_pass.hlsl" />
+    <None Include="Packages/fidelityfx.fsr/Shaders/ffx_fsr2_reconstruct_previous_depth_pass.compute" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Builtins/MultiScaleVOUpsample.compute" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Builtins/Distortion.hlsl" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Builtins/ExposureHistogram.hlsl" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Builtins/Texture3DLerp.compute" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Builtins/DeferredFog.shader" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Builtins/TemporalAntialiasing.shader" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Builtins/FastApproximateAntialiasing.hlsl" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Builtins/SubpixelMorphologicalAntialiasing.shader" />
+    <None Include="Packages/fidelityfx.fsr/Shaders/ffx_fsr3upscaler_luma_instability_pass.compute" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Builtins/Dithering.hlsl" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Builtins/Bloom.shader" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Debug/Vectorscope.compute" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Sampling.hlsl" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Builtins/CopyStdFromTexArray.shader" />
     <None Include="Assets/_Textures/Kenny Assets Voxel pack/Spritesheets/spritesheet_particles.xml" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Builtins/Lut3DBaker.compute" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Debug/Waveform.compute" />
+    <None Include="Packages/fidelityfx.fsr/Shaders/ffx_fsr2_depth_clip_pass.compute" />
+    <None Include="Packages/fidelityfx.fsr/Shaders/ffx_fsr3upscaler_luma_pyramid_pass.compute" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/API/PSSL.hlsl" />
+    <None Include="Packages/fidelityfx.fsr/Shaders/shaders/ffx_fsr2_rcas_pass.hlsl" />
     <None Include="Assets/_Textures/Kenny Assets Voxel pack/Spritesheets/spritesheet_tiles.xml" />
+    <None Include="Packages/fidelityfx.fsr/Shaders/shaders/ffx_fsr2_compute_luminance_pyramid_pass.hlsl" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Debug/LightMeter.shader" />
+    <None Include="Packages/fidelityfx.fsr/Shaders/shaders/ffx_fsr2_lock_pass.hlsl" />
+    <None Include="Packages/fidelityfx.fsr/Shaders/ffx_fsr2_compute_luminance_pyramid_pass.compute" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Builtins/AutoExposure.compute" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Builtins/MultiScaleVORender.compute" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Builtins/Texture2DLerp.shader" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Builtins/SubpixelMorphologicalAntialiasingBridge.hlsl" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Builtins/DiskKernels.hlsl" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/API/D3D11.hlsl" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Builtins/MultiScaleVODownsample2.compute" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Builtins/ScalableAO.hlsl" />
+    <None Include="Packages/fidelityfx.fsr/Shaders/shaders/ffx_fsr2_autogen_reactive_pass.hlsl" />
+    <None Include="Packages/fidelityfx.fsr/Shaders/shaders/ffx_fsr2_accumulate_pass.hlsl" />
+    <None Include="Packages/fidelityfx.fsr/Shaders/ffx_fsr3upscaler_shading_change_pyramid_pass.compute" />
+    <None Include="Packages/fidelityfx.fsr/Shaders/ffx_fsr3upscaler_tcr_autogen_pass.compute" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/API/WebGPU.hlsl" />
+    <None Include="Packages/fidelityfx.fsr/Shaders/shaders/ffx_fsr3upscaler_prepare_inputs_pass.hlsl" />
+    <None Include="Packages/fidelityfx.fsr/Shaders/shaders/ffx_fsr3upscaler_autogen_reactive_pass.hlsl" />
+    <None Include="Packages/com.unity.postprocessing/package.json" />
+    <None Include="Packages/fidelityfx.fsr/Shaders/ffx_fsr3upscaler_autogen_reactive_pass.compute" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Builtins/MultiScaleVO.shader" />
+    <None Include="Packages/fidelityfx.fsr/Shaders/ffx_fsr2_autogen_reactive_pass.compute" />
     <None Include="Assets/_Textures/Kenny Assets Voxel pack/License.txt" />
+    <None Include="Packages/fidelityfx.fsr/Shaders/shaders/ffx_fsr3upscaler_tcr_autogen_pass.hlsl" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Debug/Vectorscope.shader" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/API/D3D9.hlsl" />
     <None Include="Assets/_Textures/Kenny Assets Voxel pack/Spritesheets/spritesheet_items.xml" />
+    <None Include="Packages/fidelityfx.fsr/Shaders/shaders/ffx_fsr2_reconstruct_previous_depth_pass.hlsl" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Builtins/ScalableAO.shader" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/ACES.hlsl" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Builtins/FinalPass.shader" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Debug/Histogram.shader" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Debug/Histogram.compute" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/API/Switch.hlsl" />
+    <None Include="Packages/fidelityfx.fsr/Shaders/shaders/ffx_fsr3upscaler_accumulate_pass.hlsl" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/API/Metal.hlsl" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Builtins/Uber.shader" />
+    <None Include="Packages/fidelityfx.fsr/Shaders/shaders/ffx_fsr2_depth_clip_pass.hlsl" />
+    <None Include="Packages/fidelityfx.fsr/Shaders/shaders/ffx_fsr3upscaler_luma_instability_pass.hlsl" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/xRLib.hlsl" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Builtins/CopyStdFromDoubleWide.shader" />
+    <None Include="Packages/fidelityfx.fsr/Shaders/ffx_fsr2_tcr_autogen_pass.compute" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Debug/Overlays.shader" />
+    <None Include="Packages/fidelityfx.fsr/Shaders/ffx_fsr3upscaler_accumulate_pass.compute" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/API/PSP2.hlsl" />
+    <None Include="Packages/fidelityfx.fsr/Shaders/shaders/ffx_fsr2_tcr_autogen_pass.hlsl" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Builtins/ScreenSpaceReflections.shader" />
+    <None Include="Packages/fidelityfx.fsr/Shaders/shaders/ffx_fsr3upscaler_prepare_reactivity_pass.hlsl" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Builtins/DepthOfField.hlsl" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Builtins/DiscardAlpha.shader" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/API/OpenGL.hlsl" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Builtins/Lut2DBaker.shader" />
+    <None Include="Packages/fidelityfx.fsr/Shaders/ffx_fsr3upscaler_rcas_pass.compute" />
+    <None Include="Packages/fidelityfx.fsr/Shaders/shaders/ffx_fsr3upscaler_shading_change_pyramid_pass.hlsl" />
+    <None Include="Packages/fidelityfx.fsr/Shaders/ffx_fsr3upscaler_shading_change_pass.compute" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Builtins/CopyStd.shader" />
+    <None Include="Packages/fidelityfx.fsr/Shaders/ffx_fsr3upscaler_debug_view_pass.compute" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Builtins/MotionBlur.shader" />
+    <None Include="Packages/fidelityfx.fsr/Shaders/ffx_fsr_unity_common.cginc" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Builtins/MultiScaleVODownsample1.compute" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Builtins/Fog.hlsl" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Builtins/ExposureHistogram.compute" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Builtins/GrainBaker.shader" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Builtins/GaussianDownsample.compute" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Builtins/ScreenSpaceReflections.hlsl" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/API/XboxOne.hlsl" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Builtins/Copy.shader" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/API/D3D12.hlsl" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Builtins/DepthOfField.shader" />
+    <None Include="Packages/fidelityfx.fsr/Shaders/shaders/ffx_fsr3upscaler_rcas_pass.hlsl" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Builtins/SubpixelMorphologicalAntialiasing.hlsl" />
+    <None Include="Packages/fidelityfx.fsr/Shaders/ffx_fsr2_accumulate_pass.compute" />
+    <None Include="Packages/fidelityfx.fsr/Shaders/ffx_fsr3upscaler_prepare_inputs_pass.compute" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/API/Vulkan.hlsl" />
+    <None Include="Packages/com.unity.postprocessing/PostProcessing/Shaders/Colors.hlsl" />
     <Reference Include="UnityEngine">
       <HintPath>/Applications/Unity/Hub/Editor/6000.2.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -880,11 +993,20 @@
     <Reference Include="Unity.Mathematics.Editor">
       <HintPath>/Users/Apple/Projects/VoxelBasic/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.InferenceEngine.ONNX.Editor">
+      <HintPath>/Users/Apple/Projects/VoxelBasic/Library/ScriptAssemblies/Unity.InferenceEngine.ONNX.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Rendering.LightTransport.Editor">
       <HintPath>/Users/Apple/Projects/VoxelBasic/Library/ScriptAssemblies/Unity.Rendering.LightTransport.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.InferenceEngine.MacBLAS">
+      <HintPath>/Users/Apple/Projects/VoxelBasic/Library/ScriptAssemblies/Unity.InferenceEngine.MacBLAS.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>/Users/Apple/Projects/VoxelBasic/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.AI.Assistant.Bridge.Editor">
+      <HintPath>/Users/Apple/Projects/VoxelBasic/Library/ScriptAssemblies/Unity.AI.Assistant.Bridge.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
       <HintPath>/Users/Apple/Projects/VoxelBasic/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
@@ -898,6 +1020,9 @@
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
       <HintPath>/Users/Apple/Projects/VoxelBasic/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.InferenceEngine.Editor">
+      <HintPath>/Users/Apple/Projects/VoxelBasic/Library/ScriptAssemblies/Unity.InferenceEngine.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/Apple/Projects/VoxelBasic/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -910,14 +1035,23 @@
     <Reference Include="MCPForUnity.Editor">
       <HintPath>/Users/Apple/Projects/VoxelBasic/Library/ScriptAssemblies/MCPForUnity.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.GPUDriven.Runtime">
-      <HintPath>/Users/Apple/Projects/VoxelBasic/Library/ScriptAssemblies/Unity.RenderPipelines.GPUDriven.Runtime.dll</HintPath>
+    <Reference Include="Unity.AI.Assistant.Agent.Dynamic.Extension.Editor">
+      <HintPath>/Users/Apple/Projects/VoxelBasic/Library/ScriptAssemblies/Unity.AI.Assistant.Agent.Dynamic.Extension.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/Apple/Projects/VoxelBasic/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.AppUI.Editor">
+      <HintPath>/Users/Apple/Projects/VoxelBasic/Library/ScriptAssemblies/Unity.AppUI.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.GPUDriven.Runtime">
+      <HintPath>/Users/Apple/Projects/VoxelBasic/Library/ScriptAssemblies/Unity.RenderPipelines.GPUDriven.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Mathematics">
       <HintPath>/Users/Apple/Projects/VoxelBasic/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Serialization">
+      <HintPath>/Users/Apple/Projects/VoxelBasic/Library/ScriptAssemblies/Unity.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Shaders">
       <HintPath>/Users/Apple/Projects/VoxelBasic/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
@@ -940,11 +1074,20 @@
     <Reference Include="Unity.RenderPipelines.Universal.Runtime">
       <HintPath>/Users/Apple/Projects/VoxelBasic/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.AI.Assistant.AvatarHelper.Editor">
+      <HintPath>/Users/Apple/Projects/VoxelBasic/Library/ScriptAssemblies/Unity.AI.Assistant.AvatarHelper.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Rendering.LightTransport.Runtime">
       <HintPath>/Users/Apple/Projects/VoxelBasic/Library/ScriptAssemblies/Unity.Rendering.LightTransport.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Config.Runtime">
       <HintPath>/Users/Apple/Projects/VoxelBasic/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.AppUI">
+      <HintPath>/Users/Apple/Projects/VoxelBasic/Library/ScriptAssemblies/Unity.AppUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.AppUI.Navigation.Editor">
+      <HintPath>/Users/Apple/Projects/VoxelBasic/Library/ScriptAssemblies/Unity.AppUI.Navigation.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
       <HintPath>/Users/Apple/Projects/VoxelBasic/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
@@ -955,8 +1098,14 @@
     <Reference Include="Unity.ShaderGraph.Editor">
       <HintPath>/Users/Apple/Projects/VoxelBasic/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Serialization.Editor">
+      <HintPath>/Users/Apple/Projects/VoxelBasic/Library/ScriptAssemblies/Unity.Serialization.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor.Shared">
       <HintPath>/Users/Apple/Projects/VoxelBasic/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InferenceEngine.iOSBLAS">
+      <HintPath>/Users/Apple/Projects/VoxelBasic/Library/ScriptAssemblies/Unity.InferenceEngine.iOSBLAS.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InputSystem">
       <HintPath>/Users/Apple/Projects/VoxelBasic/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
@@ -964,8 +1113,26 @@
     <Reference Include="UnityEditor.UI">
       <HintPath>/Users/Apple/Projects/VoxelBasic/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.AppUI.Redux">
+      <HintPath>/Users/Apple/Projects/VoxelBasic/Library/ScriptAssemblies/Unity.AppUI.Redux.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InferenceEngine">
+      <HintPath>/Users/Apple/Projects/VoxelBasic/Library/ScriptAssemblies/Unity.InferenceEngine.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="FidelityFX.FSR.csproj">
+      <Project>{36e68b97-6700-1f35-9205-1817d35374bf}</Project>
+      <Name>FidelityFX.FSR</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Postprocessing.Runtime.csproj">
+      <Project>{4e404c7d-2337-c59d-6047-65ae4061cf9c}</Project>
+      <Name>Unity.Postprocessing.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Postprocessing.Editor.csproj">
+      <Project>{1138b965-1d35-ac82-da8b-f86f11ecdb83}</Project>
+      <Name>Unity.Postprocessing.Editor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: noiseSettings
   m_EditorClassIdentifier: Assembly-CSharp::NoiseSettings
   noiseZoom: 0.01
-  octaves: 6
+  octaves: 5
   offest: {x: -100, y: 3400}
   worldOffset: {x: 0, y: 0}
   persistance: 0.5
