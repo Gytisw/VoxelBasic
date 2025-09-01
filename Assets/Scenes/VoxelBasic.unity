@@ -387,7 +387,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 7.44, z: -16.66}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -603,7 +603,7 @@ Transform:
   m_GameObject: {fileID: 550893246}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 268.04037, y: 0, z: 155.42412}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -688,8 +688,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89394df5f92cd4d7195662821d948c1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BiomeGenerator
-  waterThreshold: 38
-  noiseScale: 0.01
+  waterThreshold: 10
+  biomeNoiseSettings: {fileID: 11400000, guid: dc6089cd7012b41dd8bafc47b092292f, type: 2}
 --- !u!4 &1271170129
 Transform:
   m_ObjectHideFlags: 0
@@ -1004,11 +1004,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f3e6113441c84d66886896267dc7041, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::World
-  mapSizeInChunks: 24
+  mapSizeInChunks: 32
   chunkSize: 16
   chunkHeight: 100
   chunkPrefab: {fileID: 4454925621236235480, guid: 54d13d6db5c584d13972c0f9cb71b4a1, type: 3}
-  terrainGenerator: {fileID: 0}
+  terrainGenerator: {fileID: 550893247}
   mapSeedOffset: {x: 0, y: 0}
 --- !u!4 &1913748835
 Transform:
@@ -1033,7 +1033,7 @@ SceneRoots:
   - {fileID: 410087041}
   - {fileID: 832575519}
   - {fileID: 1758689577}
-  - {fileID: 1913748835}
   - {fileID: 306016492}
   - {fileID: 1434210197}
+  - {fileID: 1913748835}
   - {fileID: 550893248}

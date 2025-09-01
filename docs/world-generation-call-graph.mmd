@@ -1,0 +1,70 @@
+%% Mermaid source for SVG export with custom dark theme
+flowchart TD
+  %% Dark colorful variant
+  classDef entry fill:#3b82f6,stroke:#60a5fa,color:#0b1220,stroke-width:2px
+  classDef action fill:#22c55e,stroke:#86efac,color:#06140b,stroke-width:2px
+  classDef loop fill:#f59e0b,stroke:#fbbf24,color:#1a1202,stroke-width:2px
+  classDef compute fill:#a78bfa,stroke:#c4b5fd,color:#150a32,stroke-width:2px
+  classDef io fill:#f472b6,stroke:#f9a8d4,color:#2f0e22,stroke-width:2px
+  classDef done fill:#10b981,stroke:#34d399,color:#03140e,stroke-width:2px
+  classDef note fill:#94a3b8,stroke:#cbd5e1,color:#0f172a,stroke-width:2px
+
+  Start([Entry: UI Button OnClick or Code]):::entry --> WG[World.GenerateWorld]:::action
+
+  subgraph Generate_Chunk_Data
+    direction TB
+    WG --> CLR[Clear: reset dictionaries and destroy chunks]:::action
+
+    WG --> LOOP_CHUNKS{For each chunk x=0..mapSizeInChunks-1, z=0..mapSizeInChunks-1}:::loop
+    LOOP_CHUNKS --> CD[Create ChunkData: size,height,world,worldPosition]:::action
+    CD --> TG[TerrainGenerator.GenerateChunkData]:::compute
+
+    TG --> LOOP_COLS{For each column x=0..chunkSize-1, z=0..chunkSize-1}:::loop
+    LOOP_COLS --> BG[BiomeGenerator.ProcessChunkColumn]:::compute
+    BG --> GSN[GetSurfaceHeightNoise]:::compute
+    GSN --> OP[MyNoise.OctavePerlin]:::compute
+    OP --> RD[MyNoise.Redistribution]:::compute
+    RD --> RV[MyNoise.RemapValue01ToInt]:::compute
+
+    BG --> LOOP_Y{For y=0..chunkHeight-1}:::loop
+    LOOP_Y --> ST[Select BlockType by groundPosition and waterThreshold]:::compute
+    ST --> SB[Chunk.SetBlock]:::action
+
+    TG --> RET1[Return updated chunk data]:::compute
+    RET1 --> ADDDICT[Add to chunkDataDictionary]:::action
+  end
+
+  subgraph Mesh_Build_and_Rendering
+    direction TB
+    WG --> BUILD{Build meshes and instantiate chunks}:::loop
+    BUILD --> LOOP_DATA{For each ChunkData}:::loop
+    LOOP_DATA --> GM[Chunk.GetChunkMeshData]:::compute
+
+    GM --> LTB[Chunk.LoopThroughTheBlocks]:::compute
+    LTB --> BH[BlockHelper.GetMeshData]:::compute
+
+    BH --> NBRCALL[Neighbor sample via Chunk.GetBlockFromChunkCoordinates]:::compute
+    NBRCALL --> IN_RANGE[Return block in same chunk]:::compute
+    NBRCALL --> WGB[World.GetBlockFromChunkCoordinates]:::compute
+    WGB --> CCP[Chunk.ChunkPositionFromBlockCoords]:::compute
+    WGB --> GIC[Chunk.GetBlockInChunkCoordinates]:::compute
+    WGB --> NRCH[Chunk.GetBlockFromChunkCoordinates]:::compute
+
+    BH --> FDI[BlockHelper.GetFaceDataIn]:::compute
+    FDI --> GFV[BlockHelper.GetFaceVertices]:::compute
+    FDI --> AQT[MeshData.AddQuadTriangles]:::compute
+    FDI --> FUV[BlockHelper.FaceUVs using BlockDataManager]:::compute
+
+    LOOP_DATA --> INST[Instantiate chunkPrefab at data.worldPosition]:::io
+    INST --> CRA[ChunkRenderer.Awake]:::compute
+    LOOP_DATA --> CRGet[GetComponent ChunkRenderer]:::action
+    CRGet --> CRInit[ChunkRenderer.InitializeChunk]:::action
+    CRGet --> CRUpd[ChunkRenderer.UpdateChunk]:::action
+    CRUpd --> RM[ChunkRenderer.RenderMesh]:::compute
+    RM --> MV[Set mesh vertices triangles uv and recalc normals]:::compute
+    RM --> MC[Build MeshCollider]:::compute
+
+    RM --> DONE([World generated]):::done
+  end
+
+  BDAwake([BlockDataManager.Awake: populate texture dictionary]):::note --> WG

@@ -1,0 +1,36 @@
+/* Mermaid SVG theming: colorful dark variant */
+:root {
+  --node-radius: 8px;
+}
+
+/* Dark background */
+svg { 
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background: #0b1220; /* deep navy */
+  color: #e5e7eb; /* gray-200 */
+}
+
+.node rect, .node path, .node polygon {
+  rx: var(--node-radius);
+  ry: var(--node-radius);
+  filter: drop-shadow(0 2px 0 rgba(0,0,0,0.25)) drop-shadow(0 6px 12px rgba(0,0,0,0.35));
+}
+
+.edgePath path {
+  stroke-width: 2.4px;
+  stroke: #cbd5e1; /* slate-300 */
+}
+
+.cluster rect {
+  rx: var(--node-radius);
+  ry: var(--node-radius);
+  stroke-width: 2.2px;
+  stroke: #64748b; /* slate-500 */
+  fill: rgba(100,116,139,0.12);
+}
+
+.label text { font-weight: 600; fill: #0b1220; }
+.edgeLabel text { fill: #e2e8f0; }
+
+/* Improve readability of multi-line labels */
+foreignObject .label, .nodeLabel, .edgeLabel { line-height: 1.2; }
