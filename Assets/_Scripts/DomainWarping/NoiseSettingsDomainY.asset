@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0c437bc8d5a634849a65a9951ae20bbd, type: 3}
-  m_Name: StoneLayerNoiseSettings
+  m_Name: NoiseSettingsDomainY
   m_EditorClassIdentifier: Assembly-CSharp::NoiseSettings
   noiseZoom: 0.01
-  octaves: 1
-  offest: {x: -3200, y: 100}
+  octaves: 3
+  offest: {x: 600, y: 350}
   worldOffset: {x: 0, y: 0}
   persistance: 0.5
   redistributionModifier: 1.2
-  exponent: 4
+  exponent: 5

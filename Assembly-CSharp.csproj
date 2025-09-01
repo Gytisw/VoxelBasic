@@ -52,6 +52,7 @@
     <Compile Include="Assets/_Scripts/TerrainGenerator.cs" />
     <Compile Include="Assets/_Scripts/ChunkData.cs" />
     <Compile Include="Assets/_Scripts/Chunk.cs" />
+    <Compile Include="Assets/_Scripts/DomainWarping.cs" />
     <Compile Include="Assets/Scripts/Fsr3UpscalerImageEffectHelper.cs" />
     <Compile Include="Assets/_Scripts/NoiseSettings.cs" />
     <Compile Include="Assets/_Scripts/BlockLayers/SurfaceLayerHandler.cs" />
