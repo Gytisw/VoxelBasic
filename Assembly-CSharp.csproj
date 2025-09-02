@@ -58,9 +58,11 @@
     <Compile Include="Assets/_Scripts/BlockLayers/SurfaceLayerHandler.cs" />
     <Compile Include="Assets/_Scripts/BlockDataSO.cs" />
     <Compile Include="Assets/Scripts/Fsr3UpscalerImageEffect.cs" />
+    <Compile Include="Assets/_Scripts/WorldDataHelper.cs" />
     <Compile Include="Assets/_Scripts/MeshData.cs" />
     <Compile Include="Assets/_Scripts/Player/PlayerCamera.cs" />
     <Compile Include="Assets/_Scripts/World.cs" />
+    <Compile Include="Assets/_Scripts/GameManager.cs" />
     <Compile Include="Assets/_Scripts/Player/PlayerInput.cs" />
     <Compile Include="Assets/_Scripts/BiomeGenerator.cs" />
     <Compile Include="Assets/_Scripts/MyNoise.cs" />
