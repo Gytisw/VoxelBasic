@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(detectionTime);
         if (Mathf.Abs(currentChunkCenter.x - player.transform.position.x) > world.chunkSize ||
-            Mathf.Abs(currentChunkCenter.x - player.transform.position.x) > world.chunkSize ||
+            Mathf.Abs(currentChunkCenter.z - player.transform.position.z) > world.chunkSize ||
             (Mathf.Abs(currentPlayerChunkPosition.y - player.transform.position.y) > world.chunkHeight)
            )
         {
