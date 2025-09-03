@@ -17,6 +17,8 @@ public class Character : MonoBehaviour
     
     public Animator animator;
     
+    public World world;
+    
     bool isWaiting = false;
     
     private void Awake()
@@ -25,6 +27,7 @@ public class Character : MonoBehaviour
             mainCamera = Camera.main;
         playerInput = GetComponent<PlayerInput>();
         playerMovement = GetComponent<PlayerMovement>();
+        world = FindFirstObjectByType<World>();
     }
     
     private void Start()
@@ -72,6 +75,16 @@ public class Character : MonoBehaviour
 
     private void HandleMouseClick()
     {
-        
+        Ray playerRay = new Ray(mainCamera.transform.position, mainCamera.transform.forward);
+        RaycastHit hit;
+        if (Physics.Raycast(playerRay, out hit, interactionRayLength, groundMask))
+        {
+            ModifyTerrain(hit);
+        }
+    }
+
+    private void ModifyTerrain(RaycastHit hit)
+    {
+        world.SetBlock(hit, BlockType.Air);
     }
 }

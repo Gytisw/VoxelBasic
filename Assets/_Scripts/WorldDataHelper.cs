@@ -131,4 +131,22 @@ public static class WorldDataHelper
             .OrderBy(pos => Vector3.Distance(playerPosition, pos))
             .ToList();
     }
+
+    internal static void SetBlock(World worldReference, Vector3Int pos, BlockType blockType)
+    {
+        ChunkData chunkData = GetChunkData(worldReference, pos);
+        if (chunkData != null)
+        {
+            Vector3Int localPosition = Chunk.GetBlockInChunkCoordinates(chunkData, pos);
+            Chunk.SetBlock(chunkData, localPosition, blockType);
+        }
+    }
+
+    private static ChunkData GetChunkData(World worldReference, Vector3Int pos)
+    {
+        Vector3Int chunkPosition = ChunkPositionFromBlockCoords(worldReference, pos);
+        ChunkData containerChunk = null;
+        worldReference.worldData.chunkDataDictionary.TryGetValue(chunkPosition, out containerChunk);
+        return containerChunk;
+    }
 }
